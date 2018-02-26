@@ -1,0 +1,186 @@
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ ls
+myfirst.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node myfirst.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/myfirst.js:3
+http.CreateServer(function(req,res){
+     ^
+
+TypeError: http.CreateServer is not a function
+    at Object.<anonymous> (/home/prateek/Documents/gitty things/labs/nodejs-lab/myfirst.js:3:6)
+    at Module._compile (module.js:410:26)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Function.Module.runMain (module.js:442:10)
+    at startup (node.js:136:18)
+    at node.js:966:3
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node myfirst.js
+ls
+sd
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ ^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node myfirst.js
+Prateeeeeek!
+Prateeeeeek!
+Prateeeeeek!
+Prateeeeeek!
+Prateeeeeek!
+Prateeeeeek!
+Prateeeeeek!
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ ls
+demo_http_url.js  myfirst.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node demo_http_url.js
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node demo_http_url.js
+/jecrc
+/favicon.ico
+/jecrc
+/favicon.ico
+/prateek
+/favicon.ico
+/favicon.ico
+/favicon.ico
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ ls
+demo_http_url.js  demo_querystring.js  myfirst.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node demo_querystring.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/demo_querystring.js:3
+createServer(function(req,res){
+^
+
+ReferenceError: createServer is not defined
+    at Object.<anonymous> (/home/prateek/Documents/gitty things/labs/nodejs-lab/demo_querystring.js:3:1)
+    at Module._compile (module.js:410:26)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Function.Module.runMain (module.js:442:10)
+    at startup (node.js:136:18)
+    at node.js:966:3
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node demo_querystring.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/demo_querystring.js:5
+	var q = url.parse(req.url, true).query;
+	        ^
+
+ReferenceError: url is not defined
+    at Server.<anonymous> (/home/prateek/Documents/gitty things/labs/nodejs-lab/demo_querystring.js:5:10)
+    at emitTwo (events.js:87:13)
+    at Server.emit (events.js:172:7)
+    at HTTPParser.parserOnIncoming [as onIncoming] (_http_server.js:528:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:88:23)
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ ^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node demo_querystring.js
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ ls
+demofile1.html    demo_querystring.js  myfirst.js
+demo_http_url.js  demo_readfile.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node demo_readfile.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/demo_readfile.js:6
+	fs.readfile('demofile1.html',function(err,data){			//syntax: fs.readfile('filename',function(err,data){});
+	   ^
+
+TypeError: fs.readfile is not a function
+    at Server.<anonymous> (/home/prateek/Documents/gitty things/labs/nodejs-lab/demo_readfile.js:6:5)
+    at emitTwo (events.js:87:13)
+    at Server.emit (events.js:172:7)
+    at HTTPParser.parserOnIncoming [as onIncoming] (_http_server.js:528:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:88:23)
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node demo_readfile.js
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ ls
+appendingfiles.js  demo_http_url.js     demo_readfile.js
+demofile1.html     demo_querystring.js  myfirst.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node appendingfiles.js
+Saved!
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ ls
+appendingfiles.js  demo_http_url.js     demo_readfile.js  myNewFile.txt
+demofile1.html     demo_querystring.js  myfirst.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ subl myNewFile.txt
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ ls
+appendingfiles.js  demo_http_url.js     demo_readfile.js  myNewFile.txt
+demofile1.html     demo_querystring.js  myfirst.js        openingfiles.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node openingfiles.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/openingfiles.js:1
+(function (exports, require, module, __filename, __dirname) { var fs = req('fs');
+                                                                       ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/prateek/Documents/gitty things/labs/nodejs-lab/openingfiles.js:1:72)
+    at Module._compile (module.js:410:26)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Function.Module.runMain (module.js:442:10)
+    at startup (node.js:136:18)
+    at node.js:966:3
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node openingfiles.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/openingfiles.js:3
+fs.openFile('myNewFile2','w', function(err){		// syntax: fs.openfile('filename','mode:r/w/other',function(err){if(err) throw err; ...});
+   ^
+
+TypeError: fs.openFile is not a function
+    at Object.<anonymous> (/home/prateek/Documents/gitty things/labs/nodejs-lab/openingfiles.js:3:4)
+    at Module._compile (module.js:410:26)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Function.Module.runMain (module.js:442:10)
+    at startup (node.js:136:18)
+    at node.js:966:3
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ node openingfiles.js
+File Saved!
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ ls
+appendingfiles.js  demo_querystring.js  myNewFile2
+demofile1.html     demo_readfile.js     myNewFile.txt
+demo_http_url.js   myfirst.js           openingfiles.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/newrepo/nodejs-lab$ ls
+appendingfiles.js  demo_querystring.js  myNewFile2       README.md
+demofile1.html     demo_readfile.js     myNewFile.txt    writingfiles.js
+demo_http_url.js   myfirst.js           openingfiles.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node writingfiles.js
+file has been written
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ ls
+appendingfiles.js  demo_querystring.js  myNewFile2        openingfiles.js
+demofile1.html     demo_readfile.js     myNewFile.txt     README.md
+demo_http_url.js   myfirst.js           newlyWRITTEN.txt  writingfiles.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ subl newlyWRITTEN.txt
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ ls
+appendingfiles.js   demo_http_url.js     myNewFile2        README.md
+day1consolelog.txt  demo_querystring.js  myNewFile.txt     writingfiles.js
+deletingfiles.js    demo_readfile.js     newlyWRITTEN.txt
+demofile1.html      myfirst.js           openingfiles.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node deletingfiles.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/deletingfiles.js:4
+    if(err) throw err;
+            ^
+
+Error: ENOENT: no such file or directory, unlink 'myNewFile'
+    at Error (native)
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node deletingfiles.js
+File has been deleted!
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ ls
+appendingfiles.js   demo_http_url.js     myNewFile.txt     writingfiles.js
+day1consolelog.txt  demo_querystring.js  newlyWRITTEN.txt
+deletingfiles.js    demo_readfile.js     openingfiles.js
+demofile1.html      myfirst.js           README.md
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node openingfiles.js
+File Saved!
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ ls
+appendingfiles.js   demo_http_url.js     myNewFile2.txt    README.md
+day1consolelog.txt  demo_querystring.js  myNewFile.txt     writingfiles.js
+deletingfiles.js    demo_readfile.js     newlyWRITTEN.txt
+demofile1.html      myfirst.js           openingfiles.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ ls
+appendingfiles.js   demo_http_url.js     myNewFile2.txt    README.md
+day1consolelog.txt  demo_querystring.js  myNewFile.txt     renamingfiles.js
+deletingfiles.js    demo_readfile.js     newlyWRITTEN.txt  writingfiles.js
+demofile1.html      myfirst.js           openingfiles.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node renamingfiles.js
+File renamed successfully!
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ ls
+appendingfiles.js   demo_http_url.js     myNewFile.txt     README.md
+day1consolelog.txt  demo_querystring.js  newlyWRITTEN.txt  renamingfiles.js
+deletingfiles.js    demo_readfile.js     nowRenamed.txt    writingfiles.js
+demofile1.html      myfirst.js           openingfiles.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ 
