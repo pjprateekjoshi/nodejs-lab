@@ -1,0 +1,50 @@
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ ls
+appendingfiles.js   demo_http_url.js     myNewFile.txt     readableurls.js
+day1consolelog.txt  demo_querystring.js  newlyWRITTEN.txt  README.md
+deletingfiles.js    demo_readfile.js     nowRenamed.txt    renamingfiles.js
+demofile1.html      myfirst.js           openingfiles.js   writingfiles.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node readable*
+localhost
+/pathname/
+?year=3003&month=Feb
+Feb
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ ls
+appendingfiles.js   demo_http_url.js     newlyWRITTEN.txt  renamingfiles.js
+day1consolelog.txt  demo_querystring.js  nowRenamed.txt    writingfiles.js
+deletingfiles.js    demo_readfile.js     openingfiles.js
+demofile1.html      myfirst.js           readableurls.js
+demo_fileserver.js  myNewFile.txt        README.md
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node *fileser*
+{ [Error: EISDIR: illegal operation on a directory, read] errno: -21, code: 'EISDIR', syscall: 'read' }
+Program Ended
+{ [Error: ENOENT: no such file or directory, open './favicon.ico']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './favicon.ico' }
+Program Ended
+{ [Error: ENOENT: no such file or directory, open './favicon.ico']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './favicon.ico' }
+Program Ended
+{ [Error: ENOENT: no such file or directory, open './demofile1']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './demofile1' }
+Program Ended
+{ [Error: ENOENT: no such file or directory, open './favicon.ico']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './favicon.ico' }
+Program Ended
+{ [Error: ENOENT: no such file or directory, open './favicon.ico']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './favicon.ico' }
+Program Ended
+
