@@ -1,0 +1,313 @@
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node demo_db*.js
+connected!
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ ls
+appendingfiles.js      demofile1.html       myfirst.js        querydb.js
+day1consolelog.txt     demo_fileserver.js   myNewFile.txt     readableurls.js
+day2consolelog.txt     demo_http_url.js     newlyWRITTEN.txt  README.md
+deletingfiles.js       demo_querystring.js  nowRenamed.txt    renamingfiles.js
+demo_db_connection.js  demo_readfile.js     openingfiles.js   writingfiles.js
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node query*
+Connected!
+/home/prateek/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+ReferenceError: sql is not defined
+    at Handshake._callback (/home/prateek/Documents/gitty things/labs/nodejs-lab/querydb.js:12:12)
+    at Handshake.Sequence.end (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Handshake.Sequence.OkPacket (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:97:8)
+    at Protocol._parsePacket (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/prateek/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/prateek/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ #errors maybe intended as sample data was being passed
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node mydb.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/mydb.js:9
+con.connect(funtion(err){
+                       ^
+
+SyntaxError: missing ) after argument list
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:374:25)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Function.Module.runMain (module.js:442:10)
+    at startup (node.js:136:18)
+    at node.js:966:3
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node mydb.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/mydb.js:9
+con.connect(funtion(err){
+                       ^
+
+SyntaxError: missing ) after argument list
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:374:25)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Function.Module.runMain (module.js:442:10)
+    at startup (node.js:136:18)
+    at node.js:966:3
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node mydb.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/mydb.js:9
+con.connect(funtion(err) {
+                       ^
+
+SyntaxError: missing ) after argument list
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:374:25)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Function.Module.runMain (module.js:442:10)
+    at startup (node.js:136:18)
+    at node.js:966:3
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node mydb.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/mydb.js:9
+con.connect(funtion(err) {
+                       ^
+
+SyntaxError: missing ) after argument list
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:374:25)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Function.Module.runMain (module.js:442:10)
+    at startup (node.js:136:18)
+    at node.js:966:3
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node mydb1.js
+/home/prateek/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'yourusername'@'localhost' (using password: YES)
+    at Handshake.Sequence._packetToError (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Handshake.ErrorPacket (/home/prateek/node_modules/mysql/lib/protocol/sequences/Handshake.js:130:18)
+    at Protocol._parsePacket (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/prateek/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/prateek/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    --------------------
+    at Protocol._enqueue (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Protocol.handshake (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:52:23)
+    at Connection.connect (/home/prateek/node_modules/mysql/lib/Connection.js:130:18)
+    at Object.<anonymous> (/home/prateek/Documents/gitty things/labs/nodejs-lab/mydb1.js:9:5)
+    at Module._compile (module.js:410:26)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Function.Module.runMain (module.js:442:10)
+    at startup (node.js:136:18)
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node mydb1.js
+Connected!
+Database created
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node mydb.js
+Connected!
+/home/prateek/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+Error: ER_DB_CREATE_EXISTS: Can't create database 'mydb'; database exists
+    at Query.Sequence._packetToError (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/home/prateek/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/prateek/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/prateek/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    --------------------
+    at Protocol._enqueue (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Connection.query (/home/prateek/node_modules/mysql/lib/Connection.js:208:25)
+    at Handshake._callback (/home/prateek/Documents/gitty things/labs/nodejs-lab/mydb.js:12:6)
+    at Handshake.Sequence.end (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Handshake.Sequence.OkPacket (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:97:8)
+    at Protocol._parsePacket (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/prateek/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/prateek/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:77:13)
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node mydb1.js
+Connected!
+/home/prateek/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+Error: ER_DB_CREATE_EXISTS: Can't create database 'mydb'; database exists
+    at Query.Sequence._packetToError (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/home/prateek/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/prateek/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/prateek/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    --------------------
+    at Protocol._enqueue (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Connection.query (/home/prateek/node_modules/mysql/lib/Connection.js:208:25)
+    at Handshake._callback (/home/prateek/Documents/gitty things/labs/nodejs-lab/mydb1.js:12:7)
+    at Handshake.Sequence.end (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Handshake.Sequence.OkPacket (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:97:8)
+    at Protocol._parsePacket (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/prateek/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/prateek/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:77:13)
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node *table.js
+Connected!
+/home/prateek/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+Error: ER_NO_DB_ERROR: No database selected
+    at Query.Sequence._packetToError (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/home/prateek/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/prateek/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/prateek/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    --------------------
+    at Protocol._enqueue (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Connection.query (/home/prateek/node_modules/mysql/lib/Connection.js:208:25)
+    at Handshake._callback (/home/prateek/Documents/gitty things/labs/nodejs-lab/demo_create_table.js:13:6)
+    at Handshake.Sequence.end (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Handshake.Sequence.OkPacket (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:97:8)
+    at Protocol._parsePacket (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/prateek/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/prateek/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:77:13)
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node *table.js
+Connected!
+Table created
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node altertable.js
+/home/prateek/Documents/gitty things/labs/nodejs-lab/altertable.js:1
+(function (exports, require, module, __filename, __dirname) { altertable.js
+                                                              ^
+
+ReferenceError: altertable is not defined
+    at Object.<anonymous> (/home/prateek/Documents/gitty things/labs/nodejs-lab/altertable.js:1:63)
+    at Module._compile (module.js:410:26)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Function.Module.runMain (module.js:442:10)
+    at startup (node.js:136:18)
+    at node.js:966:3
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node altertable.js
+Connected!
+Table ALTERed!
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node inserttable.js
+/home/prateek/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+Error: ER_ACCESS_DENIED_ERROR: Access denied for user ''@'localhost' (using password: NO)
+    at Handshake.Sequence._packetToError (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Handshake.ErrorPacket (/home/prateek/node_modules/mysql/lib/protocol/sequences/Handshake.js:130:18)
+    at Protocol._parsePacket (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/prateek/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/prateek/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    --------------------
+    at Protocol._enqueue (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Protocol.handshake (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:52:23)
+    at Connection.connect (/home/prateek/node_modules/mysql/lib/Connection.js:130:18)
+    at Object.<anonymous> (/home/prateek/Documents/gitty things/labs/nodejs-lab/inserttable.js:10:5)
+    at Module._compile (module.js:410:26)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Function.Module.runMain (module.js:442:10)
+    at startup (node.js:136:18)
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node inserttable.js
+Connected!
+1 record inserted.
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node demo_db_insert_multiple.js
+connected to db
+Number of records inserted: 9
+^[[B^[[B^[[A^[[A^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node demo_db_insert_id.js
+Connected!
+/home/prateek/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+Error: ER_EMPTY_QUERY: Query was empty
+    at Query.Sequence._packetToError (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/home/prateek/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/prateek/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/prateek/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    --------------------
+    at Protocol._enqueue (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:145:48)
+    at Connection.query (/home/prateek/node_modules/mysql/lib/Connection.js:208:25)
+    at Handshake._callback (/home/prateek/Documents/gitty things/labs/nodejs-lab/demo_db_insert_id.js:16:6)
+    at Handshake.Sequence.end (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Handshake.Sequence.OkPacket (/home/prateek/node_modules/mysql/lib/protocol/sequences/Sequence.js:97:8)
+    at Protocol._parsePacket (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/home/prateek/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/prateek/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/prateek/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:77:13)
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node demo_db_insert_id.js
+Connected!
+If you need ID, only one record can be inserted at number:undefined
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node demo_db_insert_id.js
+Connected!
+If you need ID, only one record can be inserted at number:undefined
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node demo_db_insert_id.js
+Connected!
+If you need ID, only one record can be inserted at number:undefined
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node demo_db_insert_id.js
+Connected!
+If you need ID, only one record can be inserted at number:undefined
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node demo_db_insert_id.js
+Connected!
+If you need ID, only one record can be inserted at number:15
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node demo_db_insert_id.js
+Connected!
+If you need ID, only one record can be inserted at number:16
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ node demo_db_insert_id.js
+Connected!
+If you need ID, only one record can be inserted at number:17
+^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ ^C
+prateek@prateek-lenovo:~/Documents/gitty things/labs/nodejs-lab$ 
