@@ -29,3 +29,17 @@ con.connect(function(err){
 		console.log("Number of records inserted: " + result.affectedRows);
 	});
 });
+
+
+/*
+	THE result OBJECT:-
+{
+  fieldCount: 0,
+  affectedRows: 14,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '\'Records:14  Duplicated: 0  Warnings: 0',
+  protocol41: true,
+  changedRows: 0
+}*/
